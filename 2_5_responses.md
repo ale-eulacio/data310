@@ -1,0 +1,4 @@
+1. Traditional programming puts the programmer in the position to find out the correct answers by inputting the correct rules, while in machine learning the computer tries to find out the correct rules by comparing the data and answers several times
+2. 21.996 both times when 7 is put in the predict function. This means that, for 7, the probability for both times that the function was run was extremely close to 22
+2(.5). I didn't know if the question was to modify the the function so that you get 7 as an output so I did that too. For the this one the answers were slightly difference, which makes sense since the numbers were smaller. 
+3. With the Matthews houses data the model seems to predict that one bedroom equals about .3 to .4 difference. With this info, the house with 4 bedrooms a the price of at 289k seems to be the best deal, while the worst deal is the 4 bedroom house at 399k. 
