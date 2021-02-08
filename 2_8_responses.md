@@ -7,5 +7,5 @@
    
    C. 10,000 28x28
    
-   D. Don't know how to put images in github. I used x_test[88] which was 6, and my model predicted that correctly/
+   D. Don't know how to put images in github. I used x_test[88] which was 6, and my model predicted that correctly.
    
