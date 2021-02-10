@@ -7,5 +7,5 @@
    
    C. 10,000 28x28
    
-   D. 
+   D. ![my_plot](myplot.png)
    
