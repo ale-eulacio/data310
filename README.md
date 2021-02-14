@@ -3,4 +3,3 @@
 # [2/8_exercise](https://ale-eulacio.github.io/data310/2_8_responses)
 # [Mini_project_1](https://ale-eulacio.github.io/data310/miniproject_1)
 
-
