@@ -10,4 +10,4 @@ c. What limitations or improvements might you include in order to improve your p
 
 It definitely takes some time to run the code, on my computer it took 7.5 minutes to process the 15 second rockstar video. If a program were to be analyzing live security footage, it would take much too long. Possibly analyzing every other frame or not every frame could improve the speed, because distance in between people isn't going to change much from frame to frame. 
 
-Video: ![my_video](myplot.png)
+Video: ![my_video](distanced_rockstar1rockstar.mp4)
