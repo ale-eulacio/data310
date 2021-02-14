@@ -1,4 +1,4 @@
-1.Was your social distance detector effective at detecting potential violations? Are you able to describe how the distance detector is applying its calculations of either being safe or noting a violation?
+1. Was your social distance detector effective at detecting potential violations? Are you able to describe how the distance detector is applying its calculations of either being safe or noting a violation?
 
 It seemed to be relatively effective, there were definetely sometimes that the detector could not discern distance from a a depth perspective and others when people next to each other had green squares. The image processing function seems to be discerning that the shapes in the video are humans, and then assigning centroids to them. Then the Check function calculates the distance and returns either false or true to determine if it is distanced.
 
