@@ -23,7 +23,7 @@ Filter 3 = [[0,-1,1],[-1,0,1],[-1,1,0]]
 
 Filter 3 image: ![diag_img](diag_img.png)
 
-The convolution is going through each pixel in the image (for x/y in range(size_x/y-1). In the actual loop, it is going through a 3X3 array one at time, applying the filter that is a 3x3 array from one corner to the other, 9 times to get every pixel. This ends up emphasizing the lines that are emphasized by the filter. For the vertical, the zeroes end up being in the middle row of the 3x3 array that is the filter. Therefore, in the final image, that middle line is not seen as much, and the vertical lines are emphasized much more. This is super useful for computer vision because it allows for the features of an image to pop out way more. This means that the patterns are much easier to recognize for the computer, making it much easier to recognize objects
+The convolution is going through each pixel in the image (for x/y in range(size_x/y-1). In the actual loop, it is going through a 3X3 array one at time, applying the filter that is a 3x3 array from one corner to the other, 9 times to get every pixel. This ends up emphasizing the lines that are emphasized by the filter. For the vertical, the zeroes end up being in the middle column of the 3x3 array that is the filter. Therefore, in the final image, that middle line is not seen as much, and the vertical lines are emphasized much more. This is super useful for computer vision because it allows for the features of an image to pop out way more. This means that the patterns are much easier to recognize for the computer, making it much easier to recognize objects
 
 Pooling:
 I pooled the vertical line image:
