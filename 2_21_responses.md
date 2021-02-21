@@ -28,3 +28,5 @@ The convolution is going through each pixel in the image (for x/y in range(size_
 Pooling:
 I pooled the vertical line image:
 ![vert_pooled](vert_pooled.png)
+
+The pooling loop completes its task by selecting every other pixel in x and why with "for x/y in range(0, size_x,/y 2)". Then the filter appends the 2X2 array of the sorrounding pixels of the one selected in the for loop statement. After they are all appended, the "pixels.sort(reverse=True)" line selects the largest pixel value, and this one repleces tall the other pixels. This halves the size of the image, and gives a lot more weight to all the most important velues from every 2x2 array that is passed into the loop. 
