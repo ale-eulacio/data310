@@ -29,7 +29,9 @@ and 10 dense layers at the end that compared what the model gave it to an image 
 MSE for the Homes:
 
 10 biggest over-predictions MSE = 618.038
+
 10 biggest under-predictions MSE = 26008.94
+
 10 most accurate predictions MSE = 0.276
 
 Overall, the model seemed to lean to under predict more than over-predict. Also, probably because of the lack of variables, the model pretty much predicted around 230-270 thousand for most houses> I thought this was a little strange, so I am going to have to go back and look at the code to see if there is something I missed. I will do that this weekend though because I have had quite a long week. The most significant predictor seemed to be number of baths.
