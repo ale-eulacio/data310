@@ -49,3 +49,7 @@ This last graph shows number of baths compared to the difference between the rea
 
 All in all, I'm not super satisfied with how the model performed. I spent a lot of time trying to incoprporate the spatial variable, but didn't have success incorporating it. 
 However, the model did decently despite that and managed to predict a good amount of the prices somewhat accurately. 
+
+Heres a picture of what I think are some of the best deals, with the criteria being over-predicted by the model, but still in a range that is not a complete outlier in the lower end of the price ranges. 
+
+![scatter](scatter.png
