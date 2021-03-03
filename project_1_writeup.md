@@ -35,16 +35,17 @@ data).
 This first graph visualizies how the loss changed over time using a histogram
 
 
+![loss_plot](loss_plot.png)
 
 The second graph shows the predicted vs the actual prices, with the line running through the middle representing the 1 to 1 correct answers. Most of the data accumulated around
 the line, with a few outliers of extremely high priced houses to the right not being close at all. This graph shows that a good amount of the data was over-predicted, but not by
 too much.
 
+![scatter](scatter.png)
 
-This last graph shows number of baths compared to the difference between the real price and the predicted price. For some reason baths seemed to be the most predictive factor, and
-that is shown here. 
+This last graph shows number of baths compared to the difference between the real price and the predicted price. For some reason baths seemed to be the most predictive factor, and that is shown here.  When baths were one or two, the model seemed to be pretty accurate at predicting prices. 
 
-
+![bath_plot](bath_plot.png)
 
 All in all, I'm not super satisfied with how the model performed. I spent a lot of time trying to incoprporate the spatial variable, but didn't have success incorporating it. 
 However, the model did decently despite that and managed to predict a good amount of the prices somewhat accurately. 
