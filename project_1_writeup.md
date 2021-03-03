@@ -50,6 +50,9 @@ This last graph shows number of baths compared to the difference between the rea
 All in all, I'm not super satisfied with how the model performed. I spent a lot of time trying to incoprporate the spatial variable, but didn't have success incorporating it. 
 However, the model did decently despite that and managed to predict a good amount of the prices somewhat accurately. 
 
-Heres a picture of what I think are some of the best deals, with the criteria being over-predicted by the model, but still in a range that is not a complete outlier in the lower end of the price ranges. 
+Heres a picture of what I think are some of the best deals, with the criteria being over-predicted by the model, but still in a range that is not a complete outlier in the lower end of the price ranges. The first column is the actual listed price, the second to last column is how much it was over predicted, and the last column was how much over or under
+from the orignal price the prediction was.
 
 ![best_deals](best_deals.jpg)
+
+One thing to note is, because of the natre of zillow, not all people listed their houses at accurate prices. Most of this data should be taken with a grain of salt and could explain why the model was not the best at predicting at times. 
