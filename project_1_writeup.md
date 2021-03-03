@@ -43,7 +43,7 @@ too much.
 
 ![scatter](scatter.png)
 
-This last graph shows number of baths compared to the difference between the real price and the predicted price. For some reason baths seemed to be the most predictive factor, and that is shown here.  When baths were one or two, the model seemed to be pretty accurate at predicting prices. 
+This last graph shows number of baths compared to the difference between the real price and the predicted price. For some reason baths seemed to be the most predictive factor, and that is shown here.  When baths were one or four, the model seemed to be pretty accurate at predicting prices. 
 
 ![bath_plot](bath_plot.png)
 
