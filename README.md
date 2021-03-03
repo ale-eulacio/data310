@@ -10,6 +10,7 @@ Exercises
 Projects
 
 # [Mini_project_1](https://ale-eulacio.github.io/data310/miniproject_1)
+# [Project_1](https://ale-eulacio.github.io/data310/project_1_writeup)
 
 
 
