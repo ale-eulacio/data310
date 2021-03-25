@@ -5,11 +5,9 @@ PENALIZED REGRESSION MODEL
 
 Question #1 - Which "top_model" performed the best?
 
-INSERT SC OF SLICES LIST HERE
-
 For the 15 slices taken, the mean AUC ranged from 0.633 to 0.621. The first five slices had an AUC of of 0.633, making them the best peforming models. However, model 5 did not have a very large penalization. I ended up choosing model 12 at an AUC of 0.628 and a penalization of 0.00137 as the best model. 
 
-INSERT LR PLOT HERE
+![lr_plot](lr_plot.png)
 
 Question #2 -  Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors?
 
@@ -18,7 +16,8 @@ a small difference in AUC score is irrelevant if the model is more penalized tha
 
 Question 3 - Provide your ROC plots and interpret them. How effective is your penalized logistic regression model at predicting each of the five wealth outcomes.
 
-INSERT ROC PLOTS HERE
+![lr_auc](lr_auc.png)
+
 
 The model is very effective at predicting the 1st and 5th wealth outcomes. This is to be expected, because the two extremes are the easiest to differentiate. I was surprised to 
 find that wealth classification number 1 was the second largest subset of the data (27% of the data). I imagine that the model found patterns in specific predictors like age or size of household that helped differentiate class 1 regardless of its size. I think that the the model did struggle with the size of wealth class 2 (28% of all data).This is where the model performed the worst, and I imagine that there were a great range of values for the predictors in this wealth class. This would make it extremely difficult for the model to find any patterns and have any predictive power. The same goes for class 3. I imagine that class 5 has discernable patterns in its predictor values that helped the model clearly differentiate this class from the other 4. 
@@ -29,17 +28,19 @@ Question #1 - How did your random forest model fare when compared to the penaliz
 
 The random forest models performed slightly better than the penalized regression model, with an average AUC score of 0.646. The plot below shows the logistic regression AUC graphs compared to the random forest ones, and you can see that the random forest curves are slightly larger. 
 
-INSERT RF_LR_AUC IMAGE HERE
+![rf_lr_auc](rf_lr_auc.png)
+
 
 Question #2 - Provide your ROC plots and interpret them. Are you able to provide a plot that supports the relative importance of each feature's contribution towards the predictive power of your random forest ensemble model?
 
-INSERT THE ROC PLOT FOR RF HERE
+![rf_auc](rf_auc.png)
+
 
 This models result is pretty similar to the logistic regression. The AUC scores were slightly higher, a difference of 0.013. One thing that I found super interesting about the two AUC graphs was how the curves looked. The LR graph had irregular divets in the curve in some of graphs. However, the random forest AUC curves were very smooth and did not change much at all. I think these differences in the curves are what ended up giving the random forest the slight edge. I don't really know how to explain this difference, but I imagine it has something to do with the nature of the two different models. 
 
 Also, here is a graph that shows the relative "importance" of the individual factors in the random forest model. Age seems to be the most powerful predictor. 
 
-INSERT LAST_RF_FIT GRAPH HERE
+![last_rf_fit](last_rf_fit.png)
 
 LOGISTIC REGRESSION
 
@@ -49,13 +50,21 @@ Here are the ROC curves for all of the individual wealth classes being predicted
 
 WEALTH CLASS 1
 
+![wealthclass1_LR](wealthclass1_LR.png)
+
 WEALTH CLASS 2
+
 
 WEALTH CLASS 3
 
+![wealthclass3_LR](wealthclass3_LR.png)
+
 WEALTH CLASS 4
 
+
 WEALTH CLASS 5
+
+![wealthclass5_LR](wealthclass5_LR.png)
 
 Since we saw in the last model that age and aducation are the most powerful predictors, I chose those as the columns to derive. Since all of the models have also struggled with class 2, I chose that one as the one to study. There was actually a very slight improvement for me! For class 2, all of the features had an accuracy of 0.7170, and the derived columns had an accuracy of 0.7175. Not a big difference at all, but cool to see that there was some very slight improvement. I am honestly surprised that the accuracy did not go up more.
 
