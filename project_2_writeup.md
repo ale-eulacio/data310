@@ -18,7 +18,6 @@ Question 3 - Provide your ROC plots and interpret them. How effective is your pe
 
 ![lr_auc](lr_auc.png)
 
-
 The model is very effective at predicting the 1st and 5th wealth outcomes. This is to be expected, because the two extremes are the easiest to differentiate. I was surprised to 
 find that wealth classification number 1 was the second largest subset of the data (27% of the data). I imagine that the model found patterns in specific predictors like age or size of household that helped differentiate class 1 regardless of its size. I think that the the model did struggle with the size of wealth class 2 (28% of all data).This is where the model performed the worst, and I imagine that there were a great range of values for the predictors in this wealth class. This would make it extremely difficult for the model to find any patterns and have any predictive power. The same goes for class 3. I imagine that class 5 has discernable patterns in its predictor values that helped the model clearly differentiate this class from the other 4. 
 
@@ -30,11 +29,9 @@ The random forest models performed slightly better than the penalized regression
 
 ![rf_lr_auc](rf_lr_auc.png)
 
-
 Question #2 - Provide your ROC plots and interpret them. Are you able to provide a plot that supports the relative importance of each feature's contribution towards the predictive power of your random forest ensemble model?
 
 ![rf_auc](rf_auc.png)
-
 
 This models result is pretty similar to the logistic regression. The AUC scores were slightly higher, a difference of 0.013. One thing that I found super interesting about the two AUC graphs was how the curves looked. The LR graph had irregular divets in the curve in some of graphs. However, the random forest AUC curves were very smooth and did not change much at all. I think these differences in the curves are what ended up giving the random forest the slight edge. I don't really know how to explain this difference, but I imagine it has something to do with the nature of the two different models. 
 
@@ -54,6 +51,7 @@ WEALTH CLASS 1
 
 WEALTH CLASS 2
 
+![myplot](myplot.png)
 
 WEALTH CLASS 3
 
@@ -61,38 +59,47 @@ WEALTH CLASS 3
 
 WEALTH CLASS 4
 
+![wealth4_LR](wealth41_LR.png)
 
 WEALTH CLASS 5
 
 ![wealthclass5_LR](wealthclass5_LR.png)
 
-Since we saw in the last model that age and aducation are the most powerful predictors, I chose those as the columns to derive. Since all of the models have also struggled with class 2, I chose that one as the one to study. There was actually a very slight improvement for me! For class 2, all of the features had an accuracy of 0.7170, and the derived columns had an accuracy of 0.7175. Not a big difference at all, but cool to see that there was some very slight improvement. I am honestly surprised that the accuracy did not go up more.
+Since we saw in the last model that age and aducation are the most powerful predictors, I chose those as the columns to derive. Since all of the models have also struggled with class 2, I chose that one as the one to study. There was actually a very slight improvement for me! For class 2, all of the features had an accuracy of 0.7170, and the derived columns had an accuracy of 0.7175. Not a big difference at all, but cool to see that there was some very slight improvement. I am honestly surprised that the accuracy did not go up more. Here is the ROC curve with the new derived columns
+
+![derived_wealthclass2](derived_wealthclass2.png)
 
 BOOSTED TREES
 
 Wealth Class 1 
 
-INSERT BOOSTED ROC, STATS, AND PROBS
+![boosted_class1_stats](boosted_class1_stats.jpg)
+![boosted_class1_roc](boosted_class1_roc.png)
+
+![boosted_class1_probs](boosted_class1_probs.png)
 
 Wealth Class 2 
 
-INSERT BOOSTED ROC, STATS, AND PROBS
+![boosted_class1_stats](boosted_class2_stats.jpg)
+![boosted_class1_roc](boosted_class2_roc.png)
 
-
-Wealth Class 2 
-
-INSERT BOOSTED ROC, STATS, AND PROBS
+GET CLASS 2 PROBS
 
 Wealth Class 3 
 
-INSERT BOOSTED ROC, STATS, AND PROBS
+![boosted_class3_stats](boosted_class3_stats.jpg)
+![boosted_class3_roc](boosted_class3_roc.png)
+
+![boosted_class3_probs](boosted_class3_probs.png)
 
 Wealth Class 4 
 
-INSERT BOOSTED ROC, STATS, AND PROBS
+![boosted_class_4_stats](boosted_class_4_stats.jpg)
+![class_4_boosted_roc](class_4_boosted_roc.png)
+
+![class_4_probabilities](boosted_class3_probs.png)
+
 
 Wealth Class 5 
 
-INSERT BOOSTED ROC, STATS, AND PROBS
-
-
+![boosted_model_5_stats](boosted_model_5_stats.jpg)
