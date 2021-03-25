@@ -1,5 +1,5 @@
 For my project I chose Colombia. I initially wanted to do the project on Venezuela but the DHS does not conduct surveys there. There were about 44,000 housholds worth of
-data, with around 162,000 individual persons
+data, with around 162,000 individual persons.
 
 PENALIZED REGRESSION MODEL
 
@@ -80,10 +80,10 @@ Wealth Class 1
 
 Wealth Class 2 
 
-![boosted_class1_stats](boosted_class2_stats.jpg)
-![boosted_class1_roc](boosted_class2_roc.png)
+![boosted_class2_stats](boosted_class2_stats.jpg)
+![boosted_class2_roc](boosted_class2_roc.png)
 
-GET CLASS 2 PROBS
+![boosted_class2_probs](boosted_class2_probs.png)
 
 Wealth Class 3 
 
@@ -103,3 +103,6 @@ Wealth Class 4
 Wealth Class 5 
 
 ![boosted_model_5_stats](boosted_model_5_stats.jpg)
+![boosted_class5_roc](boosted_class5_roc.png)
+
+![boosted_class5_probs](boosted_class5_probs.png)
