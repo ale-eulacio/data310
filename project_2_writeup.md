@@ -107,4 +107,4 @@ Wealth Class 5
 
 ![boosted_class5_probs](boosted_class5_probs.png)
 
-The average AUC of all of the boosted trees models was 0.7232, making it the best performing model. ELABORATE MORE.
+Of all of the models, the Boosted Decision Trees model was the most effective at predicting wealth outcomes. The average AUC of all of the boosted trees models was 0.7232, making it by far the highest AUC average. I dont know why, but some of the boosted trees AUC curves had a weird slant to them, but it did not seem to affect the models efficiency. Even with how simple this model is, it is very cool to see how solid of a model we can work with. It's still not great, only being on a verage 0.7232, but with how little tuning and messing with hyperparameters we did, it is pretty impressive. I really liked this project because of the practicality of the data. I've never worked with such "real" data in college. I look forward to possibly coming back to these models in the future and improving them even more!
