@@ -106,3 +106,5 @@ Wealth Class 5
 ![boosted_class5_roc](boosted_class5_roc.png)
 
 ![boosted_class5_probs](boosted_class5_probs.png)
+
+The average AUC of all of the boosted trees models was 0.7232, making it the best performing model. ELABORATE MORE.
