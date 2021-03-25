@@ -7,27 +7,83 @@ Question #1 - Which "top_model" performed the best?
 
 INSERT SC OF SLICES LIST HERE
 
-For the 15 slices taken, the mean AUC ranged from 0.633 to 0.621. The first five slices had an AUC of of 0.633, making them the best peforming models. The model that seemed to 
-be most succesful, however, was model 5. This is because it was the most penalized but it still had the highest AUC score of the bunch.
+For the 15 slices taken, the mean AUC ranged from 0.633 to 0.621. The first five slices had an AUC of of 0.633, making them the best peforming models. However, model 5 did not have a very large penalization. I ended up choosing model 12 at an AUC of 0.628 and a penalization of 0.00137 as the best model. 
 
 INSERT LR PLOT HERE
 
 Question #2 -  Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors?
 
-Yes, I used feature selection penalty to select model 5 as the best one. Regardless of the fact that model 5 was more penalized than models 1-4, it kept the same AUC score as
-the others. This means that this model was able to get rid of irrelevant predictors while maintaining the same AUC score, making it a better performer than the first 4. I think 
-the argument could be made that models 6-10 could also be considered succesful. They were only .001 and .002 away from the original AUC, but were even more penalized. Hwoever, I
-ended up sticking with number 5 because it had the highest AUC
+Yes, I was a little confused on which was more important in the models; more penalization or higher (slightly) AUC scores. I talked to professor Frazier and he explained that 
+a small difference in AUC score is irrelevant if the model is more penalized than the previous ones. After this discussion, I ended up choosing model 12 as my best one. This model had a penalization of 0.00137 and an AUC score of 0.628, which compared to the highest 5 (.633) is not much of a difference at all. The reason I chose this model was because model 13 jumped down to 0.626 and the subsquent models got continually worse. On the other hand, model 11's AUC score was only .001 higher, making model 12 the best in between.
 
 Question 3 - Provide your ROC plots and interpret them. How effective is your penalized logistic regression model at predicting each of the five wealth outcomes.
 
 INSERT ROC PLOTS HERE
 
 The model is very effective at predicting the 1st and 5th wealth outcomes. This is to be expected, because the two extremes are the easiest to differentiate. I was surprised to 
-find that wealth classification number 1 was the second largest subset of the data (27% of the data). I imagine that the model found patterns in specific predictors like education
-level or size of household that helped differentiate class 1 regardless of its size. I think that the the model did struggle with the size of wealth class 2 (28% of all data).
-This is where the model performed the worst, and I imagine that there were a great range of values for the predictors in this wealth class. This would make it extremely difficult
-for the model to find any patterns and have any predictive power. The same goes for class 3. I imagine that class 5 has discernable patterns in its predictor values that helped 
-the model clearly differentiate this class from the other 4. 
+find that wealth classification number 1 was the second largest subset of the data (27% of the data). I imagine that the model found patterns in specific predictors like age or size of household that helped differentiate class 1 regardless of its size. I think that the the model did struggle with the size of wealth class 2 (28% of all data).This is where the model performed the worst, and I imagine that there were a great range of values for the predictors in this wealth class. This would make it extremely difficult for the model to find any patterns and have any predictive power. The same goes for class 3. I imagine that class 5 has discernable patterns in its predictor values that helped the model clearly differentiate this class from the other 4. 
 
 RANDOM FOREST
+
+Question #1 - How did your random forest model fare when compared to the penalized logistic regression?
+
+The random forest models performed slightly better than the penalized regression model, with an average AUC score of 0.646. The plot below shows the logistic regression AUC graphs compared to the random forest ones, and you can see that the random forest curves are slightly larger. 
+
+INSERT RF_LR_AUC IMAGE HERE
+
+Question #2 - Provide your ROC plots and interpret them. Are you able to provide a plot that supports the relative importance of each feature's contribution towards the predictive power of your random forest ensemble model?
+
+INSERT THE ROC PLOT FOR RF HERE
+
+This models result is pretty similar to the logistic regression. The AUC scores were slightly higher, a difference of 0.013. One thing that I found super interesting about the two AUC graphs was how the curves looked. The LR graph had irregular divets in the curve in some of graphs. However, the random forest AUC curves were very smooth and did not change much at all. I think these differences in the curves are what ended up giving the random forest the slight edge. I don't really know how to explain this difference, but I imagine it has something to do with the nature of the two different models. 
+
+Also, here is a graph that shows the relative "importance" of the individual factors in the random forest model. Age seems to be the most powerful predictor. 
+
+INSERT LAST_RF_FIT GRAPH HERE
+
+LOGISTIC REGRESSION
+
+The first thing we do here is individually go through the 5 wealth classes and predict them. This is helpful for the model because, instead of trying to differentiate all of them, it is just trying to figure out if they are the individual class that is being studied at the time. I got some pretty good results. All of the models did not dip below .70 accuracy, and the predictions of classes 1 4 and 5 all had accuracy scores in the 80's, which I'd say is pretty solid with how simple of a model this and that its real data.
+
+Here are the ROC curves for all of the individual wealth classes being predicted by all of the features 
+
+WEALTH CLASS 1
+
+WEALTH CLASS 2
+
+WEALTH CLASS 3
+
+WEALTH CLASS 4
+
+WEALTH CLASS 5
+
+Since we saw in the last model that age and aducation are the most powerful predictors, I chose those as the columns to derive. Since all of the models have also struggled with class 2, I chose that one as the one to study. There was actually a very slight improvement for me! For class 2, all of the features had an accuracy of 0.7170, and the derived columns had an accuracy of 0.7175. Not a big difference at all, but cool to see that there was some very slight improvement. I am honestly surprised that the accuracy did not go up more.
+
+BOOSTED TREES
+
+Wealth Class 1 
+
+INSERT BOOSTED ROC, STATS, AND PROBS
+
+Wealth Class 2 
+
+INSERT BOOSTED ROC, STATS, AND PROBS
+
+
+Wealth Class 2 
+
+INSERT BOOSTED ROC, STATS, AND PROBS
+
+Wealth Class 3 
+
+INSERT BOOSTED ROC, STATS, AND PROBS
+
+Wealth Class 4 
+
+INSERT BOOSTED ROC, STATS, AND PROBS
+
+Wealth Class 5 
+
+INSERT BOOSTED ROC, STATS, AND PROBS
+
+
