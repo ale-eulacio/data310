@@ -59,7 +59,7 @@ WEALTH CLASS 3
 
 WEALTH CLASS 4
 
-![wealth4_LR](wealth41_LR.png)
+![wealth4_LR](wealth4_LR.png)
 
 WEALTH CLASS 5
 
