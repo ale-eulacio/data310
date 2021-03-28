@@ -1,6 +1,24 @@
 For my project I chose Colombia. I initially wanted to do the project on Venezuela but the DHS does not conduct surveys there. There were about 44,000 housholds worth of
 data, with around 162,000 individual persons.
 
+Here are the Heat Maps!
+
+Raw
+
+![raw](raw.png)
+
+Scale
+
+![scale](scale.png)
+
+Normal
+
+![normal](normal.png)
+
+Percentized
+
+![percent](percent.png)
+
 PENALIZED REGRESSION MODEL
 
 Question #1 - Which "top_model" performed the best?
