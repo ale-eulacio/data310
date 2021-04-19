@@ -15,7 +15,7 @@ Population sums frequency
 
 Difference of Sums plot
 
-![lm_difsums](lm_diffsums.png)
+![lm_difsums](lm_difsums.png)
 
 Difference of sums frequency
 
