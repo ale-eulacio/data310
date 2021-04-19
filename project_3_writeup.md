@@ -37,7 +37,7 @@ The difference in total sums for the random forest model was even better than th
 
 Population Sums plot
  
-![rf_popsums](rf_popsums.png)
+![rf_popsums_real](rf_popsums_real.png)
 
 Population sums frequency
 
@@ -45,7 +45,7 @@ Population sums frequency
 
 Difference of Sums plot
 
-![rf_difsums](rf_diffsums.png)
+![rf_difsums_real](rf_difsums_real.png)
 
 Difference of sums frequency
 
