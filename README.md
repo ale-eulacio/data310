@@ -12,5 +12,5 @@ Projects
 # [Mini_project_1](https://ale-eulacio.github.io/data310/miniproject_1)
 # [Project_1](https://ale-eulacio.github.io/data310/project_1_writeup)
 # [Project_2](https://ale-eulacio.github.io/data310/project_2_writeup)
-
+# [Project_3](https://ale-eulacio.github.io/data310/project_3_writeup)
 
