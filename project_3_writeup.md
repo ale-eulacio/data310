@@ -49,7 +49,7 @@ Difference of Sums plot
 
 Difference of sums frequency
 
-![rf_diffsums_freq](rf_diffsums_freq.png)
+![rf_diffsum_freq](rf_diffsum_freq.png)
 
 3D Predicted Values
 
