@@ -7,3 +7,7 @@ https://www.kaggle.com/ekrembayar/premier-league-match-reports-20192020
 https://fbref.com/en/comps/9/Premier-League-Stats
 
 As for models, I will conduct a variety of different ones in order to find which one performs the best. I will conduct a linear regression, a random forest, a boosted trees, and any other models that could possibly predict the winning outcome. The baseline for this project will be above 48% correct due to the fact that the home team wins 48% of the time. The data that I have has at least 45 columns, although I am still searching for more variables to possible incorporate. 
+
+
+Here is the link to my final video. Thanks for a wonderful semester Professor Frazier!
+https://drive.google.com/file/d/1CV01x8rIFJMf-C6lpRI_7K47NogjVO2l/view?usp=sharing
